@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.largura-conteudo {
+    width: calc(100% - 240px);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #23B4EB;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.logo {
+    font-family: "Ranga", sans-serif;
+}
+
+header span {
+    color: red;
+    font-family: "Ranga";
+}
+
+.lista-nav {
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+}
+
+.lista-nav a {
+    font-weight: 600;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+.lista-nav a:hover {
+    color: #D7F1FB;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.paddings {
+    padding: 25px 0px;
+}
+
+.paddings h2 {
+    margin-bottom: 15px;
+}
+
+.paddings p {
+    line-height: 24px;
+}
+
+.imagem-delivery {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.lista-links {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.lista-links a {
+    color: #fff;
+    background-color: #23B4EB;
+    padding: 10px 15px;
+    display: block;
+}
+
+@media (max-width: 780px) {
+    .header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px ;
+    }
+    .largura-conteudo {
+        width: calc(100% - 60px);
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .lista-links {
+        gap: 10px;
+        column-gap: 20px;
+    }
+
+    .paddings {
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 400px){
+    .lista-nav {
+        display: none;
+    }
+    .header {
+        padding: 2px;
+        height: 50px;
+    }
+}
